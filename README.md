@@ -97,7 +97,7 @@ app.component('posts-index', PostIndex)
 
 app.mount('#app')
 ```
-↑ちなみに import { createApp } from 'vue'  なのはvue2までで、vue3からは vue/dist/vue-.esm-bundler を指定。[詳しくはオフィシャルドキュメント参照](https://v3.ja.vuejs.org/guide/installation.html#%E3%83%8F%E3%82%99%E3%83%B3%E3%83%88%E3%82%99%E3%83%A9%E3%83%BC%E3%82%92%E4%BD%BF%E3%81%86%E5%A0%B4%E5%90%88 "インストール|Vue.js")。
+↑ちなみにLaravelでvueを使う時の import { createApp } from 'vue'  なのはvue2までで、vue3からは vue/dist/vue-.esm-bundler を指定。[詳しくはオフィシャルドキュメント参照](https://v3.ja.vuejs.org/guide/installation.html#%E3%83%8F%E3%82%99%E3%83%B3%E3%83%88%E3%82%99%E3%83%A9%E3%83%BC%E3%82%92%E4%BD%BF%E3%81%86%E5%A0%B4%E5%90%88 "インストール|Vue.js")。
 
 ## tailwind.config.jsの修正（これしないとVueにTailwindcssのスタイルが反映されない）
 ```
