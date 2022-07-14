@@ -16,7 +16,7 @@ npm i
 
 ## viteのvueプラグインとvue3のインストール
 ```
-npm i @vitejs/plugin-vue
+npm i @vitejs/plugin-vue@2
 npm i vue@3
 ```
 
@@ -27,10 +27,13 @@ import laravel from 'laravel-vite-plugin';
 
 export default defineConfig({
     plugins: [
-        laravel([
-            'resources/css/app.css',
-            'resources/js/app.js',
-        ]),
+        laravel({
+            input: [
+                'resources/css/app.css',
+                'resources/js/app.js',
+            ],
+            refresh: true,
+        }),
     ],
 });
 ```
@@ -44,10 +47,13 @@ import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
     plugins: [
-        laravel([
-            'resources/css/app.css',
-            'resources/js/app.js',
-        ]),
+        laravel({
+            input: [
+                'resources/css/app.css',
+                'resources/js/app.js',
+            ],
+            refresh: true,
+        }),
         
 //この下のvue({})追加
         vue({
@@ -187,7 +193,7 @@ npm run dev
 
 を実行後表示される
 
-Laravel v9.19.0 
+Laravel v9.20.0 
 
   > APP_URL: http://laravel-vite.test  ←こちらにアクセス
 ```
