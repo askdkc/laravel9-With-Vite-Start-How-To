@@ -17,7 +17,7 @@ npm i
 
 ## Install vite vue plugin and Vue3
 ```
-npm i @vitejs/plugin-vue
+npm i @vitejs/plugin-vue@2
 npm i vue@next
 ```
 
@@ -28,10 +28,13 @@ import laravel from 'laravel-vite-plugin';
 
 export default defineConfig({
     plugins: [
-        laravel([
-            'resources/css/app.css',
-            'resources/js/app.js',
-        ]),
+        laravel({
+            input: [
+                'resources/css/app.css',
+                'resources/js/app.js',
+            ],
+            refresh: true,
+        }),
     ],
 });
 ```
@@ -45,10 +48,13 @@ import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
     plugins: [
-        laravel([
-            'resources/css/app.css',
-            'resources/js/app.js',
-        ]),
+        laravel({
+            input: [
+                'resources/css/app.css',
+                'resources/js/app.js',
+            ],
+            refresh: true,
+        }),
         
         // add vue({}) setting down below
         vue({
