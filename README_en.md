@@ -2,6 +2,11 @@
 Recently laravel-mix has been replaced with Vite. This README guides you through setting up
 your Laravel project with vite in order to support Vue.js in your blade files.
 
+## Update your Laravel (Vite 3 support on 22/Jul/2022)
+```
+composer global update
+```
+
 ## Create new Laravel Project
 ```
 laravel new laravel-vite
@@ -17,7 +22,7 @@ npm i
 
 ## Install vite vue plugin and Vue3
 ```
-npm i @vitejs/plugin-vue@2
+npm i @vitejs/plugin-vue
 npm i vue@next
 ```
 
