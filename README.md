@@ -1,6 +1,11 @@
 # Laravel 9 with ViteでVue.jsを使う下準備
 最新版のLaravelがlaravel-mixからviteになったので、それを使って手軽にVueコンポーネントをLaravelのbladeから呼び出して使うメモ
 
+## 最新版Laravelを入れよう（2022.7.20 Vite3対応）
+```
+composer globak update
+```
+
 ## 新規Laravelプロジェクト作成
 ```
 laravel new laravel-vite
@@ -16,8 +21,8 @@ npm i
 
 ## viteのvueプラグインとvue3のインストール
 ```
-npm i @vitejs/plugin-vue@2
-npm i vue@3
+npm i @vitejs/plugin-vue
+npm i vue@latest
 ```
 
 ## vite.config.jsの書き換え
@@ -187,7 +192,7 @@ module.exports = {
 </x-guest-layout>
 ```
 
-## 試してみよう
+## 試してみよう (Laravel Valet利用例)
 ```
 npm run dev
 
@@ -195,5 +200,5 @@ npm run dev
 
 Laravel v9.20.0 
 
-  > APP_URL: http://laravel-vite.test  ←こちらにアクセス
+  > APP_URL: http://laravel-vite.test  ←こちらにアクセス(Valet無しの場合、Localhost or 127.0.0.1)
 ```
