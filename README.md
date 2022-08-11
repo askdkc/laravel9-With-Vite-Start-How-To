@@ -3,7 +3,7 @@
 
 ## 最新版Laravelを入れよう（2022.7.20 Vite3対応）
 ```
-composer globak update
+composer global update
 ```
 
 ## 新規Laravelプロジェクト作成
