@@ -153,7 +153,7 @@ module.exports = {
 };
 ```
 
-## Now you can use your vue components from your blade file.
+## Now you can use your vue components in your blade file.
 ```
 <x-guest-layout>
     <div id="app">
