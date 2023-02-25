@@ -7,7 +7,7 @@
 ```vim
 require('./bootstrap');
 
-window.Vue = require('vue').default;
+window.Vue = require('vue');
 
 import * as Vue from 'vue';
 
