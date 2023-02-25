@@ -1,6 +1,6 @@
 # Mix to Vite ファイルの変えどころ
 
-## `resources/is/app.js` の例
+## `resources/js/app.js` の例
 
 `mix時代`
 
@@ -31,7 +31,7 @@ app.mount('#app');
 ```
 
 
-## `resources/is/bootstrap.js` の例
+## `resources/js/bootstrap.js` の例
 
 `mix時代`
 
