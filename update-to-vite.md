@@ -47,7 +47,7 @@ window.axios = require('axios');
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 ```
 
-↓ requireは殺す
+↓ requireは殺す(importに換えるのです)
 
 `vite way`
 
